@@ -92,3 +92,4 @@ document.querySelector('.next-btn').addEventListener('click', function() {
         nextPage.classList.add('active');
     }
 });
+
