@@ -449,3 +449,485 @@ nav .fas {
     }
 }
 
+/* Certifications Section */
+#certifications {
+    padding: 80px 0;
+}
+
+.certifications-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.certification {
+    display: flex;
+    background: #262626;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+
+.certification:hover {
+    transform: translateY(-10px);
+}
+
+.certification img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-right: 1px solid #ff004f;
+}
+
+.cert-info {
+    padding: 20px;
+}
+
+.cert-info h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.cert-info p {
+    color: #ababab;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.cert-info .btn {
+    padding: 8px 20px;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+/* Certification Modal */
+.cert-modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    max-height: 90%;
+}
+
+#modal-cert {
+    max-height: 80vh;
+    border: 2px solid #ff004f;
+}
+
+.close-modal {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+/* Certifications Section */
+#certifications {
+    padding: 80px 0;
+    background: #0a0a0a;
+}
+
+.certifications-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.certification-card {
+    background: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.certification-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(255, 0, 79, 0.2);
+}
+
+.cert-image-container {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.cert-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.cert-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.certification-card:hover .cert-overlay {
+    opacity: 1;
+}
+
+.view-btn {
+    padding: 10px 20px;
+    background: #ff004f;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.view-btn:hover {
+    background: #e00045;
+}
+
+.cert-details {
+    padding: 20px;
+}
+
+.cert-details h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.cert-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: #ababab;
+}
+
+.cert-meta i {
+    margin-right: 5px;
+    color: #ff004f;
+}
+
+.verify-btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background: transparent;
+    color: #ff004f;
+    border: 1px solid #ff004f;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.verify-btn:hover {
+    background: #ff004f;
+    color: white;
+}
+
+.verify-btn i {
+    margin-left: 5px;
+    font-size: 0.8rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .certifications-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .cert-image-container {
+        height: 250px;
+    }
+}
+
+/* Show More Button */
+.show-more-container {
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+.show-more-btn {
+    background: transparent;
+    color: #ff004f;
+    border: 2px solid #ff004f;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.show-more-btn:hover {
+    background: #ff004f;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 0, 79, 0.3);
+}
+
+.show-more-btn i {
+    transition: transform 0.3s ease;
+}
+
+.show-more-btn:hover i {
+    transform: translateX(5px);
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.page-btn, .next-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: #262626;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.next-btn {
+    width: auto;
+    padding: 0 20px;
+    border-radius: 30px;
+    gap: 5px;
+}
+
+.page-btn:hover, .next-btn:hover {
+    background: #ff004f;
+    color: white;
+}
+
+.page-btn.active {
+    background: #ff004f;
+    color: white;
+}
+
+.dots {
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pagination {
+        gap: 5px;
+    }
+    
+    .page-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+    
+    .next-btn {
+        padding: 0 15px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Service Card with Integration Icon */
+.service-card {
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 0, 79, 0.1);
+}
+
+.service-icon {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.service-icon i {
+    font-size: 30px;
+    color: #ff004f;
+    position: relative;
+    z-index: 2;
+}
+
+.integration-pulse {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 0, 79, 0.2);
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.8);
+        opacity: 0.7;
+    }
+    70% {
+        transform: scale(1.3);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+}
+
+.service-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.service-card p {
+    color: #ababab;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.service-link {
+    color: #ff004f;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+}
+
+.service-link i {
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.service-link:hover {
+    color: #fff;
+}
+
+.service-link:hover i {
+    transform: translateX(5px);
+}
+
+/* SQA Service Card Specific Styles */
+.service-icon .fa-clipboard-check {
+    color: #4CAF50; /* Green color for quality assurance */
+}
+
+.sqa-shine {
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        to bottom right,
+        rgba(76, 175, 80, 0) 0%,
+        rgba(76, 175, 80, 0.1) 45%,
+        rgba(76, 175, 80, 0) 50%
+    );
+    transform: rotate(30deg);
+    animation: shine 3s infinite;
+}
+
+@keyframes shine {
+    0% { left: -50%; }
+    100% { left: 150%; }
+}
+
+/* Updated the existing service-card styles for consistency */
+.service-card {
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(76, 175, 80, 0.1);
+}
+
+.service-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.service-card p {
+    color: #ababab;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.service-link {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+}
+
+.service-link i {
+    font-size: 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.service-link:hover {
+    color: #fff;
+}
+
+.service-link:hover i {
+    transform: translateX(5px);
+}
+

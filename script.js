@@ -41,3 +41,54 @@ form.addEventListener('submit', e => {
         })
         .catch(error => console.error('Error!', error.message));
 });
+
+// Certification Modal
+const certButtons = document.querySelectorAll('.cert-info .btn');
+const modal = document.createElement('div');
+modal.className = 'cert-modal';
+modal.innerHTML = `
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <img src="" alt="Full Certification" id="modal-cert">
+    </div>
+`;
+document.body.appendChild(modal);
+
+certButtons.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const certImg = btn.closest('.certification').querySelector('img').src;
+        document.getElementById('modal-cert').src = certImg;
+        modal.style.display = 'block';
+    });
+});
+
+modal.querySelector('.close-modal').addEventListener('click', () => {
+    modal.style.display = 'none';
+});
+
+// Show More functionality
+document.querySelector('.show-more-btn').addEventListener('click', function() {
+    // This would normally load more certifications via AJAX
+    alert('Loading more certifications...');
+    // In a real implementation, you would fetch and append more certification cards
+});
+
+// Pagination functionality
+document.querySelectorAll('.page-btn').forEach(btn => {
+    btn.addEventListener('click', function() {
+        document.querySelector('.page-btn.active').classList.remove('active');
+        this.classList.add('active');
+        // This would normally load the selected page of certifications
+    });
+});
+
+document.querySelector('.next-btn').addEventListener('click', function() {
+    const activePage = document.querySelector('.page-btn.active');
+    const nextPage = activePage.nextElementSibling;
+    
+    if(nextPage && !nextPage.classList.contains('dots')) {
+        activePage.classList.remove('active');
+        nextPage.classList.add('active');
+    }
+});

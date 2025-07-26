@@ -106,22 +106,28 @@
         <div class="container">
             <h1 class="sub-title">My Services</h1>
             <div class="services-list">
-                <div>
-                    <i class="fas fa-code"></i>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-plug"></i> <!-- Changed from fa-code to fa-plug -->
+                        <div class="integration-pulse"></div> <!-- Added animated element -->
+                    </div>
                     <h2>System Integration</h2>
                     <p>System integration is the process of connecting disparate computer systems, software
                         applications, and data sources to work together as a unified whole. It aims to create a cohesive
                         IT environment where information flows seamlessly, enabling better data sharing, automation, and
-                        overall operational efficiency.
-                    </p>
-                    <a href="#">Learn more</a>
+                        overall operational efficiency.</p>
+                    <a href="#" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
                 </div>
-                <div>
-                    <i class="fas fa-crop-alt"></i>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-clipboard-check"></i> <!-- SQA appropriate icon -->
+                        <div class="sqa-shine"></div> <!-- Added quality assurance visual element -->
+                    </div>
                     <h2>Software Quality Assurance</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet
-                        sapien quis.</p>
-                    <a href="#">Learn more</a>
+                    <p>Our comprehensive SQA services ensure your software meets the highest quality standards through
+                        rigorous testing methodologies, automated test suites, and continuous quality monitoring
+                        throughout the development lifecycle.</p>
+                    <a href="#" class="service-link">Learn more <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div>
                     <i class="fab fa-app-store"></i>
@@ -133,6 +139,132 @@
             </div>
         </div>
     </section>
+
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+        <div class="container">
+            <h1 class="sub-title">Certifications</h1>
+            <div class="certifications-list">
+                <!-- Certification 1 -->
+                <div class="certification-card">
+                    <div class="cert-image-container">
+                        <img src="images/TestAutomation.jpg" alt="Test Automation Foundations Certification"
+                            class="cert-image">
+                        <div class="cert-overlay">
+                            <a href="https://www.linkedin.com/learning/test-automation-foundations/build-a-foundation-of-test-automation-26042946"
+                                class="view-btn">View Full</a>
+                        </div>
+                    </div>
+                    <div class="cert-details">
+                        <h3>Test Automation Foundations</h3>
+                        <div class="cert-meta">
+                            <span class="issuer"><i class="fas fa-award"></i> LinkedIn</span>
+                            <span class="date"><i class="far fa-calendar-alt"></i> 2024</span>
+                        </div>
+                        <a href="https://www.linkedin.com/learning/certificates/6f738fa392f68352dfc214c40f64e9626fb140b83f3da9d28cb3ebbeef9b770f?trk=share_certificate"
+                            class="verify-btn">Verify Credential <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <!-- Certification 2 -->
+                <div class="certification-card">
+                    <div class="cert-image-container">
+                        <img src="images/SoftwareTesting.jpg"
+                            alt="Programming Foundations: Software Testing/QA Certification" class="cert-image">
+                        <div class="cert-overlay">
+                            <a href="https://www.linkedin.com/learning/programming-foundations-software-testing-qa/set-the-standard-with-quality-assurance-qa"
+                                class="view-btn">View Full</a>
+                        </div>
+                    </div>
+                    <div class="cert-details">
+                        <h3>Programming Foundations: Software Testing/QA</h3>
+                        <div class="cert-meta">
+                            <span class="issuer"><i class="fas fa-award"></i> LinkedIn</span>
+                            <span class="date"><i class="far fa-calendar-alt"></i> 2024</span>
+                        </div>
+                        <a href="https://www.linkedin.com/learning/certificates/71e4fe1f0e1f00efa551cbb5b9e3780fd70b30b25a1e2855cafccc6ef06c0191?trk=share_certificate"
+                            class="verify-btn">Verify Credential <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <!-- Certification 3 -->
+                <div class="certification-card">
+                    <div class="cert-image-container">
+                        <img src="images/Angular.jpg" alt="Scrum Certification" class="cert-image">
+                        <div class="cert-overlay">
+                            <a href="https://www.linkedin.com/learning/angular-essential-training-22884621/more-than-just-a-framework"
+                                class="view-btn">View Full</a>
+                        </div>
+                    </div>
+                    <div class="cert-details">
+                        <h3>Angular Essential Training</h3>
+                        <div class="cert-meta">
+                            <span class="issuer"><i class="fas fa-award"></i> LinkedIn</span>
+                            <span class="date"><i class="far fa-calendar-alt"></i> 2025</span>
+                        </div>
+                        <a href="https://www.linkedin.com/learning/certificates/9f639886027bf0f31658b1abbb4b30b39717996d96f02a65b80b944b595ebcfe?trk=share_certificate"
+                            class="verify-btn">Verify Credential <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <!-- Certification 4 -->
+                <div class="certification-card">
+                    <div class="cert-image-container">
+                        <img src="images/cert-3.jpg" alt="Scrum Certification" class="cert-image">
+                        <div class="cert-overlay">
+                            <a href="#" class="view-btn">View Full</a>
+                        </div>
+                    </div>
+                    <div class="cert-details">
+                        <h3>Scrum Master</h3>
+                        <div class="cert-meta">
+                            <span class="issuer"><i class="fas fa-award"></i> Scrum Alliance</span>
+                            <span class="date"><i class="far fa-calendar-alt"></i> 2021</span>
+                        </div>
+                        <a href="#" class="verify-btn">Verify Credential <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <!-- Certification 5 -->
+                <div class="certification-card">
+                    <div class="cert-image-container">
+                        <img src="images/cert-3.jpg" alt="Scrum Certification" class="cert-image">
+                        <div class="cert-overlay">
+                            <a href="#" class="view-btn">View Full</a>
+                        </div>
+                    </div>
+                    <div class="cert-details">
+                        <h3>Scrum Master</h3>
+                        <div class="cert-meta">
+                            <span class="issuer"><i class="fas fa-award"></i> Scrum Alliance</span>
+                            <span class="date"><i class="far fa-calendar-alt"></i> 2021</span>
+                        </div>
+                        <a href="#" class="verify-btn">Verify Credential <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Show More Arrow -->
+            <!-- <div class="show-more-container">
+                <button class="show-more-btn">
+                    Show More Certifications
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </div> -->
+
+            <!-- Pagination -->
+            <!-- <div class="pagination">
+                <button class="page-btn active">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+                <span class="dots">...</span>
+                <button class="page-btn">5</button>
+                <button class="next-btn">Next <i class="fas fa-chevron-right"></i></button>
+            </div> -->
+        </div>
+    </section>
+
 
     <!-- Portfolio Section -->
     <section id="portfolio">
